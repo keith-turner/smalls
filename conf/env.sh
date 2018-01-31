@@ -1,6 +1,7 @@
 ACCUMULO_VERSION=$(accumulo version)
 HADOOP_VERSION=$(hadoop version | head -1 | cut -f 2 -d ' ')
 
+#TODO ZK version
 #TODO fail of command above fails
 
 CLASSPATH=$(mvn -Daccumulo.version=$ACCUMULO_VERSION -Dhadoop.version=$HADOOP_VERSION -q exec:exec -Dexec.executable=echo -Dexec.args="%classpath")
