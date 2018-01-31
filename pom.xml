@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.keith-turner</groupId>
-    <artifactId>accumulo-base</artifactId>
+    <artifactId>small-scan-perf</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>accumulo-base</name>
+    <name>small-scan-perf</name>
     <url></url>
 
     <properties>
