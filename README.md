@@ -4,7 +4,7 @@ Simple test to measure the performance of lots of threads doing many small scans
 
 Check the files in conf before running.
 
-The following are some possible accumulo performance settings.  These require a tserver restart.
+The following are some possible accumulo performance settings. Also consider disabling debug logging on the tserver.  These require a tserver restart.
 
 ```
 accumulo shell -u root -p secret <<EOF
