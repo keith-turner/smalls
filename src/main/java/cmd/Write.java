@@ -29,6 +29,7 @@ public class Write {
     Map<String, String> props = new HashMap<>();
     props.put("table.file.compress.blocksize.index","256K");
     props.put("table.file.compress.blocksize.index", "8K");
+    props.put("table.cache.block.enable","true");
     ntc.setProperties(props);
     
     try {
