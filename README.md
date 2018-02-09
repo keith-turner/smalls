@@ -17,6 +17,17 @@ config -s tserver.scan.files.open.max=1000
 EOF
 ```
 
+Adding the following to `accumulo-site.xml` seems to help performance on machines
+with lots of cores.  The default thrift server has a single thread servicing
+all I/O.  This single thread can become a bottleneck.
+
+```xml
+  <property>
+    <name>general.rpc.server.type</name>
+    <value>threadpool</value>
+  </property>
+```
+
 To use, do the following.
 
  * Run `mvn package`
